@@ -43,10 +43,10 @@ const MovieDetails = () => {
       </MovieInfo>
       <AdditionalMovieInfo>
         <h3>
-          <NavLinkItem to="cast">Cast</NavLinkItem>
+          <NavLinkItem to="cast" state={location.state}>Cast</NavLinkItem>
         </h3>
         <h3>
-          <NavLinkItem to="reviews">Reviews</NavLinkItem>
+          <NavLinkItem to="reviews" state={location.state}>Reviews</NavLinkItem>
         </h3>
       </AdditionalMovieInfo>
       <Suspense fallback={<div>Loading...</div>}>
